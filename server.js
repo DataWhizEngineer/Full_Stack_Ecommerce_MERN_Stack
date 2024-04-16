@@ -7,8 +7,8 @@ import authRoutes from './routes/authRoute.js';
 import categoryRoutes from "./routes/CategoryRoute.js";
 import ProductRoutes from './routes/ProductRoutes.js';
 import cors from 'cors';
-import path from 'path';
-import {fileURLToPath} from "url";
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
 
 
 
@@ -21,7 +21,7 @@ connectDB();
 
 //esmodule fix
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = dirname(__filename);
 
 //rest object
 const app = express();
@@ -30,7 +30,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
-app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(join(__dirname, "./client/build")));
 
 
 //routes
@@ -40,7 +40,7 @@ app.use("/api/v1/products" , ProductRoutes )
 
 //rest api
 app.use("*" , function(req ,res ){
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  res.sendFile(join(__dirname, "./client/build/index.html"));
 })
 
 //port 
