@@ -54,6 +54,6 @@ This project serves as a solid foundation for building full-fledged MERN applica
 We welcome pull requests and suggestions for improvement.
 
 !["Alt text"](
-![registerpage](https://github.com/DataWhizEngineer/Full_Stack_Ecommerce_MERN_Stack/assets/141387846/1625429a-0d43-4269-9f77-06f1c5efb53d) "width=500 height=300")
+![registerpage](https://github.com/DataWhizEngineer/Full_Stack_Ecommerce_MERN_Stack/assets/141387846/1625429a-0d43-4269-9f77-06f1c5efb53d) "width=700 height=300")
 
 
